@@ -1,0 +1,241 @@
+
+.main-wrapper{
+background-color: black;
+display: grid;
+grid-template-areas:
+"header"
+"nav"
+"main"
+"footer";
+}
+header, nav, main, footer {
+    border: solid 3px red;
+}
+header{
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+justify-content: space-evenly;
+}
+nav{
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+main{
+display: flex;
+flex-direction: column;
+padding: 5px;
+align-items: center;
+justify-content: space-between;
+}
+footer{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+}
+h1{
+    font-family: 'Anek Odia', sans-serif;
+    color: rgb(13, 9, 207);
+    padding-left: center;
+}
+h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: blue;
+}
+h3{
+    font-family: 'Oswald', sans-serif;
+    color: brown;
+}
+p{
+    font-family: 'Roboto Mono', monospace;
+    color: whitesmoke;
+    justify-content: center
+}
+li a{
+    font-family: 'Anek Odia', sans-serif;
+    color: rgb(216, 86, 86);
+}
+/* barra navegacion */
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 20px;
+    color:black;
+    float: right;
+    padding: 10px;
+    line-height: 10px;
+    cursor: pointer;
+    display: none;
+}
+.menu{
+    background-color: rgb(255, 255, 255);
+    
+}
+.menu ul li{
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    display: inline;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 26px;
+    display: inline; 
+    width: 100vh;
+}
+.menu ul li a:hover{
+    background-color:antiquewhite;
+}
+th{
+    font-family: 'Anek Odia', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 30px; 
+    align-items: center;
+    justify-content: center;
+}
+td{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    border-radius: 30px;
+    padding: 20px;
+    width: 125px;
+    height: 125px;
+}
+.title{
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+}
+section{
+    background-color: #222222;
+    background-size: 100vw;
+    font-family: 'Anek Odia', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.service{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: blanchedalmond;
+    padding: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.custom{
+    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+}
+@media screen and (max-width: 1024px) {
+    .main-wrapper{
+        flex: auto
+        "header"
+        "nav"
+        "main"
+        "footer";
+        }
+    header{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            }
+    nav{
+                display: inline-flex;
+                padding: 5px;
+                justify-content: space-between;
+                }
+              
+    main{
+    
+                align-items: center;
+                justify-content: space-between;
+                }
+    footer{
+                
+                align-items: center;
+                justify-content: space-between;
+}
+}
+@media screen and (max-width: 768px) {
+    .main-wrapper{
+        flex: auto
+        "header"
+        "nav"
+        "main"
+        "footer";
+        }
+    .menu ul li a{
+        text-decoration: none;
+        margin: 10px;
+        padding: 5px 5px;
+        display: inline;
+        font-size: 10px;
+    }
+    #check:checked ~ul{
+        left: 0;
+
+    }
+    
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+    
+    .main-wrapper{
+        flex: auto
+        "header"
+        "nav"
+        "main"
+        "footer";      
+        }
+        header{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-evenly;
+            }
+            nav{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            }
+            main{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            align-items: center;
+            justify-content: space-between;
+            }
+            footer{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            }
+        .menu ul li{
+            display: block;
+            margin: 5px 0;
+            padding: 10px;
+           line-height: 30px;
+        }
+        
+        .menu ul li a{
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .menu ul li a:hover{
+            background-color:antiquewhite;
+        }
+        #check:checked{
+            left: 0;
+        }
+}
