@@ -155,6 +155,9 @@ section{
                 justify-content: space-between;
                 }
               
+    nav .logo{
+        height: 15px 0px;
+    }            
     main{
     
                 align-items: center;
@@ -174,18 +177,7 @@ section{
         "main"
         "footer";
         }
-    .menu ul li a{
-        text-decoration: none;
-        margin: 10px;
-        padding: 5px 5px;
-        display: inline;
-        font-size: 10px;
-    }
-    #check:checked ~ul{
-        left: 0;
-
-    }
-    
+   
 }
 @media screen and (min-width: 320px) and (max-width: 767px){
     
@@ -208,8 +200,12 @@ section{
             align-items: center;
             justify-content: space-between;
             }
+            nav .logo{
+                display: none;
+            }
+               
             main{
-            display: flex;
+            display: block;
             flex-direction: column;
             padding: 5px;
             align-items: center;
@@ -221,21 +217,5 @@ section{
             align-items: center;
             justify-content: space-around;
             }
-        .menu ul li{
-            display: block;
-            margin: 5px 0;
-            padding: 10px;
-           line-height: 30px;
-        }
-        
-        .menu ul li a{
-            text-decoration: none;
-            font-size: 25px;
-        }
-        .menu ul li a:hover{
-            background-color:antiquewhite;
-        }
-        #check:checked{
-            left: 0;
-        }
+       
 }
