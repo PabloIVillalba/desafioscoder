@@ -1,6 +1,6 @@
 
 .main-wrapper{
-background-color: black;
+background-color:  #302F35 ;
 display: grid;
 grid-template-areas:
 "header"
@@ -9,7 +9,7 @@ grid-template-areas:
 "footer";
 }
 header, nav, main, footer {
-    border: solid 3px red;
+    border: solid 3px #d32f2f;
 }
 header{
 display: flex;
@@ -19,34 +19,38 @@ justify-content: space-evenly;
 }
 nav{
 display:flex;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
 justify-content: space-between;
 }
 main{
 display: flex;
-flex-direction: column;
+flex-direction:column;
 padding: 5px;
 align-items: center;
 justify-content: space-between;
 }
 footer{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 align-items: center;
 justify-content: space-around;
+padding: 10px;
 }
 h1{
     font-family: 'Anek Odia', sans-serif;
-    color: rgb(13, 9, 207);
+    font-weight: bold;
+    color: rgb(96, 87, 194);
     padding-left: center;
 }
 h2{
     font-family: 'Roboto Condensed', sans-serif;
-    color: blue;
+    font-weight: bold;
+    color: rgb(162, 186, 188);
 }
 h3{
     font-family: 'Oswald', sans-serif;
+    font-weight: bold;
     color: brown;
 }
 p{
@@ -108,14 +112,17 @@ td{
 }
 
 .logo{
-    border-radius: 30px;
+    border-radius: 50%;
     padding: 20px;
-    width: 125px;
-    height: 125px;
+    width: 120px;
+    height: 120px;
 }
 .title{
     border-style: solid;
     border-color: rgb(255, 255, 255);
+}
+.card-text{
+    background-color: black;
 }
 section{
     background-color: #222222;
@@ -126,15 +133,12 @@ section{
 .service{
     font-family: 'Roboto Condensed', sans-serif;
     color: blanchedalmond;
-    padding: 150px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 30px;
 }
 .custom{
-    padding: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    width:auto;
 }
 @media screen and (max-width: 1024px) {
     .main-wrapper{
